@@ -24,7 +24,7 @@ Entry Types Supported :
  // gameloop\
  entry.update() or If you want to update all the entries you can use entrybox.Entry.update_all()
  
- To learn more see main.py file
+ To learn more see demo.py file
  
 # ~~~~
  
