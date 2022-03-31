@@ -142,7 +142,7 @@ class Entry:
             self.__cursor.left = self.__text_surf[1].right
 
             if self.__blink:
-                if time.time()%1>0.8:
+                if time.time()%1>0.5:
                     pygame.draw.rect(self.__screen,(*self.cursorcl,self.dynamicalpha),self.__cursor,1)
             else:
                 pygame.draw.rect(self.__screen,(*self.cursorcl,self.dynamicalpha),self.__cursor,1)
