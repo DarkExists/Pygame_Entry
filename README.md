@@ -52,6 +52,6 @@ Attributes of Module:
 # mindigvalue,maxdigvalue : Supports only when entry is "digit" type In case if you want to set the range of entry then use these attributes e g. Date,Month,Year
 **blink** : If set to True the cursor will blink (by default set to False)\
 **lock_open_img** : If You set lock attribute to True and you want to show your lock open image use this attribute attribute takes a tuple -> ("image path","image name","image extention")\
-**lock_img** : If You set lock attribute to True and you want to show your lock image use this attribute attribute takes a tuple -> ("image path","image name","image extention")\
+**lock_img** : If You set lock attribute to True and you want to show your lock image use this attribute attribute takes a tuple -> ("image path","image name","image extention")
 
-# Prefer to download the two given images "eye.png" and "eye_lock.png" and put these images in the directory where your put the Module File
+# If You Are Not Downloading The Whole Package We Prefer You to download the two given images "eye.png" and "eye_lock.png" and put these images in the directory where your put the Module File.
