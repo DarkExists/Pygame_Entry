@@ -190,14 +190,9 @@ class Entry:
             elif event.key == pygame.K_RETURN:
                 self.__select = self.__full_select = False
                 if self.__lock: self.showvalue=False
-            elif event.key == pygame.K_TAB:
-                if len(Entry.entries)>1:
-                    if self.__pos == len(Entry.entries)-1:
-                        self.select = self.__full_select = False
-                        if self.__lock: 
-                            self.showvalue = False
-                        Entry.entries[0].__select = True
-
+            elif event.key == pygame.K_SPACE:
+                if self.__type != "digit" and self.__type != "phone":
+                    self.text += " "
             else: 
                 if self.__type == "alnum":
                     if event.unicode.isalnum() or event.unicode in punc:
