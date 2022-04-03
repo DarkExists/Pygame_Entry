@@ -164,8 +164,8 @@ class Entry:
             self.__screen.blit(*self.__text_surf)
             if self.text == "":
                 draw_text(self.__screen,self.msg,self.__font,self.__size,self.activecl if not self.__rect.collidepoint(mouse) else self.inactivecl,(self.__text_surf[1].left,self.__text_surf[1].top))
-
-
+        return
+    
     def inputevents(self,event):
         keys = pygame.key.get_pressed()
         
